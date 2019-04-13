@@ -1,0 +1,2 @@
+# Excelから関数型言語マスター
+https://qiita.com/piacere_ex/items/b7787580fce5f148242f#for%E3%81%AFfor%E3%81%A7%E3%81%AF%E7%84%A1%E3%81%84%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E7%B5%8C%E9%A8%93%E8%80%85%E3%81%AE%E3%81%BF%E3%81%94%E8%A6%A7%E3%82%92
