@@ -1,14 +1,19 @@
 <%
-result = Db.query( "select * from members" )
-data = result |> Db.columns_rows
+result = Json.get( "https://qiita.com", "/api/v2/items?query=elixir" )
+data = result
+columns = [ "id", "title", "created_at" ]
 %>
 <table border="1">
+<tr>
+  <%= for column <- columns do %>
+  <th><%= column %></td>
+  <% end %>
+</tr>
 <%= for record <- data do %>
 <tr>
-    <td><%= record[ "name" ] %></td>
-    <td><%= record[ "age" ] %></td>
-    <td><%= record[ "team" ] %></td>
-    <td><%= record[ "position" ] %></td>
+  <%= for column <- columns do %>
+  <td><%= record[ column ] %></td>
+  <% end %>
 </tr>
 <% end %>
 </table>
